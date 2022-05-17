@@ -1,0 +1,18 @@
+
+/* - Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login{
+    border: 2px solid white;
+}
+.openMenu{
+    transform: translateX(0);
+    opacity: 1;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%);}

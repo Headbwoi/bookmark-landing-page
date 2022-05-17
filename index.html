@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="stylesheet" href="public/output.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="font-rubik overflow-x-hidden">
+    <!-- header -->
+    <header class="relative mb-8">
+      <nav
+        class="container py-12 px-8 lg:px-0 flex justify-between items-center"
+      >
+        <img
+          src="images/logo-bookmark.svg"
+          alt="logo-bookmark"
+          class="relative z-20"
+        />
+
+        <!-- nav menu desktop -->
+        <div
+          class="hidden lg:flex lg:items-center lg:justify-center space-x-12"
+        >
+          <a
+            href="#features"
+            class="uppercase text-veryDarkBlue text-sm font-medium hover:text-softRed duration-150"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="uppercase text-veryDarkBlue text-sm font-medium hover:text-softRed duration-150"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="uppercase text-veryDarkBlue text-sm font-medium hover:text-softRed duration-150"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="uppercase text-sm font-medium bg-softRed text-white py-2 px-7 rounded-md hover:bg-white hover:text-softRed hover:border-2 hover:border-solid hover:border-softRed shadow-lg"
+            >Login</a
+          >
+        </div>
+
+        <!-- mobile hamburger -->
+
+        <img
+          src="images/icon-hamburger.svg"
+          alt="icon-hamburger"
+          class="w-5 lg:hidden cursor-pointer"
+          id="hamburger"
+        />
+
+        <!-- mobile menu -->
+        <div
+          class="fixed inset-0 py-12 px-8 w-screen h-screen bg-mobileMenuBg z-50 mobmenu lg:hidden duration-500 opacity-0 -translate-x-full overflow-x-hidden"
+          id="mobileMenu"
+        >
+          <div
+            class="flex items-center justify-between border-b border-grayishBlue pb-11"
+          >
+            <img
+              src="images/logo-bookmark1.svg"
+              alt="logo-bookmark"
+              class="cursor-pointer"
+            />
+            <!-- mobile hamburger -->
+            <img
+              src="images/icon-close.svg"
+              alt="icon-close"
+              class="w-5 cursor-pointer"
+              id="hamburgerClose"
+            />
+          </div>
+
+          <div class="links flex items-center justify-center flex-col">
+            <a
+              href="#features"
+              class="uppercase text-white text-lg font-medium w-full text-center border-b border-grayishBlue py-6 tracking-widest"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="uppercase text-white text-lg font-medium w-full text-center border-b border-grayishBlue py-6 tracking-widest"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="uppercase text-white text-lg font-medium w-full text-center border-b border-grayishBlue py-6 tracking-widest"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="login uppercase text-lg font-medium w-full text-center border-b text-white py-3 px-7 rounded-md my-8 tracking-widest hover:bg-white hover:text-veryDarkBlue duration-200"
+              >Login</a
+            >
+          </div>
+
+          <div class="icons flex justify-center items-center space-x-10 mt-28">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" />
+            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- hero section -->
+      <section class="hero relative mb-10">
+        <div
+          class="container lg:flex lg:items-center lg:justify-between lg:flex-row-reverse"
+        >
+          <div
+            class="image relative after:absolute after:top-[20%] after:right-0 after:rounded-l-full after:w-[18.75rem] after:h-[13rem] after:bg-softBlue after:block after:-z-10 lg:after:h-[355px] lg:after:w-[520px] lg:after:-right-60 mb-14"
+          >
+            <img
+              src="images/illustration-hero.svg"
+              alt="illustration-hero"
+              class="w-full lg:w-[66.9375rem] lg:h-[23.5625rem]"
+            />
+          </div>
+
+          <div class="text text-center px-9 lg:px-0 lg:text-left lg:mr-24">
+            <h1
+              class="text-3xl font-medium mb-8 md:text-4xl lg:text-5xl text-veryDarkBlue"
+            >
+              A Simple Bookmark Manager
+            </h1>
+            <p class="text-grayishBlue text-[1rem] mb-8">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+
+            <div
+              class="flex items-center justify-center mb-2 space-x-4 lg:justify-start"
+            >
+              <a href="#" class="bg-softBlue text-white py-4 px-3 rounded-md"
+                >Get it on Chrome</a
+              >
+              <a
+                href="#"
+                class="bg-semiWhite text-veryDarkBlue py-4 px-3 rounded-md shadow-md"
+                >Get it on Firefox</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- festures section -->
+
+      <section class="features" id="features">
+        <div class="container py-14">
+          <!-- text -->
+          <div class="px-7 lg:px-0 mb-10">
+            <h1
+              class="text-3xl font-medium mb-8 md:text-4xl lg:text-5xl text-veryDarkBlue text-center"
+            >
+              Features
+            </h1>
+            <p class="text-grayishBlue text-[1rem] mb-8 text-center lg:w-[33.75rem] lg:mx-auto lg:px-10">
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
+
+          <!-- toggle -->
+          <div class="lg:flex lg:items-center lg:justify-center text-center">
+            <p class="py-4 border-t border-y-grayishBlue lg:border-b lg:border-t-0">Simple Bookmarking</p>
+            <p class="py-4 border-y border-y-grayishBlue lg:border-b lg:border-t-0">Speedy Searching</p>
+            <p class="py-4 border-b border-y-grayishBlue lg:border-b lg:border-t-0">Easy Sharing</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 
+  
+  
+  
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  
+  
+
+  Bookmark in one click
+
+  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+  gives you complete control over how you manage your favourite sites.
+
+  More Info
+
+  Intelligent search
+
+  Our powerful search feature will help you find saved sites in no time at all. 
+  No need to trawl through all of your bookmarks.
+
+  More Info
+
+  Share your bookmarks
+
+  Easily share your bookmarks and collections with others. Create a shareable 
+  link that you can send at the click of a button.
+
+  More Info
+
+  Download the extension
+
+  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+  got a favourite you’d like us to prioritize.
+
+  Add to Chrome
+  Minimum version 62
+  Add & Install Extension
+
+  Add to Firefox
+  Minimum version 55
+  Add & Install Extension
+
+  Add to Opera
+  Minimum version 46
+  Add & Install Extension
+
+  Frequently Asked Questions
+  
+  Here are some of our FAQs. If you have any other questions you’d like 
+  answered please feel free to email us.
+ -->
+    <!-- Question 1 -->
+    <!-- What is Bookmark? -->
+
+    <!-- Answer 1 -->
+    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
+
+    <!-- Question 2 -->
+    <!-- How can I request a new browser? -->
+
+    <!-- Answer 2 -->
+    <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
+
+    <!-- Question 3 -->
+    <!-- Is there a mobile app? -->
+
+    <!-- Answer 3 -->
+    <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum. -->
+
+    <!-- Question 4 -->
+    <!-- What about other Chromium browsers? -->
+
+    <!-- Answer 4 -->
+    <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+  vitae neque eget nisl gravida pellentesque non ut velit. -->
+
+    <!-- More Info
+
+  35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact
+   -->
+    <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  </body>
+</html>
