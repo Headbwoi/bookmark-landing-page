@@ -187,70 +187,127 @@
 
           <!-- toggle -->
           <div
-            class="text-center lg:flex lg:items-center lg:justify-center lg:space-x-32 lg:border-b lg:border-grayishBlue lg:w-fit mx-auto mb-12"
+            class="text-center lg:flex lg:items-center lg:justify-center lg:space-x-6 lg:border-b lg:border-grayishBlue lg:w-fit mx-auto mb-20"
+            id="togglefeature"
           >
             <p
-              class="py-4 text-veryDarkBlue font-medium border-t border-y-grayishBlue lg:border-0 lg:pb-7 hover:text-softRed cursor-pointer showTab"
+              class="py-4 px-12 text-veryDarkBlue font-medium border-t border-y-grayishBlue lg:border-0 lg:pb-7 hover:text-softRed cursor-pointer showTab toggleitem"
+              id="1"
             >
               Simple Bookmarking
             </p>
             <p
-              class="py-4 text-veryDarkBlue font-medium border-y border-y-grayishBlue lg:border-0 lg:pb-7 hover:text-softRed cursor-pointer"
+              class="py-4 px-12 text-veryDarkBlue font-medium border-y border-y-grayishBlue lg:border-0 lg:pb-7 hover:text-softRed cursor-pointer toggleitem"
+              id="2"
             >
               Speedy Searching
             </p>
             <p
-              class="py-4 text-veryDarkBlue font-medium border-b border-y-grayishBlue lg:border-0 lg:pb-7 hover:text-softRed cursor-pointer"
+              class="py-4 px-12 text-veryDarkBlue font-medium border-b border-y-grayishBlue lg:border-0 lg:pb-7 hover:text-softRed cursor-pointer toggleitem"
+              id="3"
             >
               Easy Sharing
             </p>
           </div>
 
           <!-- features item -->
-          <div class="lg:flex lg:items-center lg:justify-between">
-            <!-- image -->
-            <div
-              class="image relative after:absolute after:top-[20%] after:left-0 after:rounded-r-full after:w-[18.75rem] after:h-[13rem] after:bg-softBlue after:block after:-z-10 lg:after:h-[22.1875rem] lg:after:w-[37.5rem] lg:after:-left-60 mb-14"
-            >
-              <img
-                src="images/illustration-hero.svg"
-                alt="illustration-hero"
-                class="w-full lg:w-[66.9375rem] lg:h-[23.5625rem]"
-              />
+          <div >
+
+            <!-- item -one -->
+            <div class="lg:flex lg:items-center lg:justify-between feature-item">
+
+              <!-- image -->
+              <div
+                class="image relative after:absolute after:top-[20%] after:left-0 after:rounded-r-full after:w-[18.75rem] after:h-[13rem] after:bg-softBlue after:block after:-z-10 lg:after:h-[22.1875rem] lg:after:w-[37.5rem] lg:after:-left-60 mb-14"
+              >
+                <img
+                  src="images/illustration-features-tab-1.svg"
+                  alt="illustration-hero"
+                  class="w-[19.6875rem] mx-auto lg:mx-0 lg:w-[66.9375rem] lg:h-[23.5625rem]"
+                />
+              </div>
+
+                <!-- text -->
+              <div class="text text-center px-7 lg:px-0 lg:text-left lg:ml-24">
+                <h2
+                  class="text-3xl font-medium mb-6 md:text-4xl text-veryDarkBlue"
+                >
+                Bookmark in one click
+                </h1>
+                <p class="text-grayishBlue text-[1rem] mb-8">
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                </p>
+
+                <a href="#" class="hidden lg:block w-fit py-3 px-6 bg-softBlue text-white rounded-md">More Info</a>
+
+              </div>
+            </div>
+            <!-- item-two -->
+            <div class="lg:flex lg:items-center lg:justify-between feature-item1 hideFeature">
+
+              <!-- image -->
+              <div
+                class="image relative after:absolute after:top-[20%] after:left-0 after:rounded-r-full after:w-[18.75rem] after:h-[13rem] after:bg-softBlue after:block after:-z-10 lg:after:h-[22.1875rem] lg:after:w-[37.5rem] lg:after:-left-60 mb-14"
+              >
+                <img
+                  src="images/illustration-features-tab-2.svg"
+                  alt="illustration-hero"
+                  class="w-[19.6875rem] mx-auto lg:mx-0 lg:w-[66.9375rem] lg:h-[23.5625rem]"
+                />
+              </div>
+
+                <!-- text -->
+              <div class="text text-center px-7 lg:px-0 lg:text-left lg:ml-24">
+                <h2
+                  class="text-3xl font-medium mb-6 md:text-4xl text-veryDarkBlue"
+                >
+                Intelligent search
+                </h1>
+                <p class="text-grayishBlue text-[1rem] mb-8">
+                  Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+                </p>
+
+                <a href="#" class="hidden lg:block w-fit py-3 px-6 bg-softBlue text-white rounded-md">More Info</a>
+
+              </div>
             </div>
 
-            <!-- text -->
-          <div class="text text-center px-7 lg:px-0 lg:text-left lg:ml-24">
-            <h2
-              class="text-3xl font-medium mb-6 md:text-4xl text-veryDarkBlue"
-            >
-            Bookmark in one click
-            </h1>
-            <p class="text-grayishBlue text-[1rem] mb-8">
-              Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
-            </p>
+            <!-- item-three -->
+            <div class="lg:flex lg:items-center lg:justify-between feature-item2 hideFeature">
 
-            <a href="#" class="hidden lg:block w-fit py-3 px-6 bg-softBlue text-white rounded-md">More Info</a>
+              <!-- image -->
+              <div
+                class="image relative after:absolute after:top-[20%] after:left-0 after:rounded-r-full after:w-[18.75rem] after:h-[13rem] after:bg-softBlue after:block after:-z-10 lg:after:h-[22.1875rem] lg:after:w-[37.5rem] lg:after:-left-60 mb-14"
+              >
+                <img
+                  src="images/illustration-features-tab-3.svg"
+                  alt="illustration-hero"
+                  class="w-[19.6875rem] mx-auto lg:mx-0 lg:w-[66.9375rem] lg:h-[23.5625rem]"
+                />
+              </div>
 
-          </div>
+                <!-- text -->
+              <div class="text text-center px-7 lg:px-0 lg:text-left lg:ml-24">
+                <h2
+                  class="text-3xl font-medium mb-6 md:text-4xl text-veryDarkBlue"
+                >
+                Share your bookmarks
+                </h1>
+                <p class="text-grayishBlue text-[1rem] mb-8">
+                  Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+                </p>
+
+                <a href="#" class="hidden lg:block w-fit py-3 px-6 bg-softBlue text-white rounded-md">More Info</a>
+
+              </div>
+            </div>
+            
 
           </div>
         </div>
       </section>
 
-      <!-- Intelligent search
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info -->
 
 <!-- download extension section -->
 
@@ -396,16 +453,8 @@
 
 
     </main>
-    <!-- 
 
-
-  
-  
-  
- -->
-
-
-    <!-- More Info
+    <!--
 
   35,000+ already joined
 

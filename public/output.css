@@ -558,10 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -616,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full{
   width: 100%;
+}
+
+.w-\[19\.6875rem\]{
+  width: 19.6875rem;
 }
 
 .w-fit{
@@ -793,6 +793,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -955,6 +960,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.hideFeature{
+  transform: scale(0);
+  display: none;
+  height: 0;
+}
+
 .accordion-item.active #redImage{
   display: block;
   opacity: 1;
@@ -1098,6 +1109,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 
+  .lg\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mr-24{
     margin-right: 6rem;
   }
@@ -1176,10 +1192,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-between;
   }
 
-  .lg\:space-x-32 > :not([hidden]) ~ :not([hidden]){
+  .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(8rem * var(--tw-space-x-reverse));
-    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-x-9 > :not([hidden]) ~ :not([hidden]){

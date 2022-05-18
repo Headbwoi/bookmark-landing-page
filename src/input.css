@@ -41,6 +41,11 @@
     }
 }
 
+.hideFeature{
+    transform: scale(0);
+    display: none;
+    height: 0;
+}
 
 .accordion-item.active #redImage{
     display: block;
