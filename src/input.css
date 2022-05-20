@@ -1,15 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
- /* @font-face {
-    font-family: "Rubik";
-    src: url(../static/Rubik-Light.ttf);
-}
-@font-face {
-    font-family: "Rubik";
-    src: url(../static/Rubik-Medium.ttf);
-} */
 
+html{
+    scroll-behavior: smooth;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,7 +38,6 @@
 
 .hideFeature{
     transform: scale(0);
-    display: none;
     height: 0;
 }
 
@@ -59,5 +53,16 @@
     height: auto;
     overflow: auto;
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%);}
+
+
+/* contact */
+
+.inputDiv.error .input input[type="text"]{
+    border: 3px solid hsl(0, 94%, 66%);
+}
+.inputDiv.error .input img{
+    display: block;
+}
+.inputDiv.error p{
+    display: block;
+}
