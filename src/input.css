@@ -41,11 +41,11 @@ html{
     height: 0;
 }
 
-.accordion-item.active #redImage{
+.accordion-item.active .redImage{
     display: block;
     opacity: 1;
 }
-.accordion-item.active #blueImage{
+.accordion-item.active .blueImage{
     display: none;
     opacity: 0;
 }
