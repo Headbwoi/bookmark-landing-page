@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://headbwoi.github.io/bookmark-landing-page/)
 
 ## My process
 
@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Headbwoi](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@headbwoi_1](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Headbwoi](https://www.frontendmentor.io/profile/headbwoi)
+- Twitter - [@headbwoi_1](https://www.twitter.com/headbwoi_1)
